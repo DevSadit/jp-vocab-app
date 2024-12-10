@@ -59,7 +59,7 @@ const Navbar = () => {
             Lessons
           </Link>
           <Link
-            href="/about"
+            href="/tutorials"
             className="hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
             Tutorials
