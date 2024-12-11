@@ -10,10 +10,11 @@ const tutorials = () => {
         Watch Tutorials According to your level
       </h1>
       <hr />
-      <div className="space-y-5">
+      <div className="space-y-5 mt-5">
         <Beginer />
         <Intermediate />
         <Professional />
+
       </div>
     </div>
   );

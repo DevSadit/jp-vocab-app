@@ -66,20 +66,18 @@ const Navbar = () => {
           </Link>
 
           <div className="flex items-center">
-            <Button className="mx-1" variant="outline">
-              Login
-            </Button>
-            <Button className="mx-1" variant="outline">
-              Signup
-            </Button>
+            <Link href="/login" className="mx-1">
+              <Button variant="outline">Login</Button>
+            </Link>
+            <Link href="/register" className="mx-1">
+              <Button variant="outline">Register</Button>
+            </Link>
             {/* <ModeToggle /> */}
           </div>
         </div>
 
         <div className="md:hidden">
-          <span className="mx-2">
-            {/* <ModeToggle /> */}
-          </span>
+          <span className="mx-2">{/* <ModeToggle /> */}</span>
           <Sheet>
             <SheetTrigger>
               <svg
@@ -99,18 +97,20 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle className="font-bold my-4">Kotoba Connect</SheetTitle>
+                <SheetTitle className="font-bold my-4">
+                  Kotoba Connect
+                </SheetTitle>
                 <SheetDescription>
                   <div className="flex flex-col gap-6">
                     <Link href="/">Lessons</Link>
                     <Link href="/about">Tutorials</Link>
                     <div>
-                      <Button className="mx-1 text-xs" variant="outline">
-                        Login
-                      </Button>
-                      <Button className="mx-1 text-xs" variant="outline">
-                        Signup
-                      </Button>
+                      <Link href="/login" className="mx-1 text-xs">
+                        <Button variant="outline">Login</Button>
+                      </Link>
+                      <Link href="/register" className="mx-1 text-xs">
+                        <Button variant="outline">Register</Button>
+                      </Link>
                     </div>
                   </div>
                 </SheetDescription>
